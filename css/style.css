@@ -1,0 +1,104 @@
+:root {
+    --belyy: #fff;
+    --firmennyy-cvet: #21062a;
+    --akcent: #5a0d67;
+    --seryy: #c4c4c4;
+    --chernyy: #2c2b2b;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url('../images/header/Group 17.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 105px;
+}
+
+.headerTop>a {
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
+
+.headerBottomLeft>h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
+
+.headerBottomLeft>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
+
+.headerBottomLeft>p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--belyy);
+    margin: 30px 0;
+}
+
+.headerBottom {
+    display: flex;
+}
+
+.btnConsultation {
+    background: var(--akcent);
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--belyy);
+    padding: 15px 55px;
+    border: none;
+    transition: 0.3s;
+    margin-bottom: 70px;
+
+    &:hover {
+        background: var(--belyy);
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--akcent);
+    }
+}
+
+.buttons {
+    max-width: 300px;
+}
+
+.headerLinks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+}
+
+.link {
+    margin-bottom: 118px;
+}
+
+.headerBottomRight {
+    position: absolute;
+    top: 340px;
+    right: 130px;
+}
