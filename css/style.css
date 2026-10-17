@@ -15,6 +15,8 @@
     background-image: url('../images/header/Group 17.jpg');
     background-size: cover;
     background-position: center;
+    padding: 47px 0 118px 0;
+    margin-bottom: 300px;
 }
 
 .headerTop {
@@ -22,6 +24,8 @@
     justify-content: space-between;
     margin-bottom: 105px;
 }
+
+
 
 .headerTop>a {
     text-decoration: none;
@@ -93,12 +97,124 @@
     gap: 3px;
 }
 
-.link {
-    margin-bottom: 118px;
-}
+
 
 .headerBottomRight {
     position: absolute;
     top: 340px;
     right: 130px;
+}
+
+/* -----------------------MAIN------------------------ */
+
+/* SERVICES */
+
+.ourServicesRight>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--firmennyy-cvet);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        background-color: #2b1b3d;
+        height: 2px;
+    }
+}
+
+.ourServicesRight {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 504px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--chernyy);
+}
+
+.whyFromUSA>h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--akcent);
+}
+
+.whyFromUSA {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 69px;
+}
+
+.whyCostLow>h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--akcent);
+    margin-bottom: 12px;
+}
+
+.serviceBox {
+    display: flex;
+    align-items: center;
+    gap: 96px;
+}
+
+.ourServicesLeft {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.btnService {
+    display: flex;
+    gap: 40px;
+    background: transparent;
+    border: 1px solid var(--seryy);
+    padding: 10px 47px 9px 20px;
+    width: 585px;
+    transition: 0.3s;
+}
+
+.btnService:hover {
+    width: 600px;
+    padding: 10px 47px 9px 20px;
+    border: 2px solid var(--akcent);
+}
+
+.btnServiceInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.btnServiceInformation>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--chernyy);
+}
+
+.btnServiceInformation>p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--chernyy);
+}
+
+.number {
+    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--seryy);
+    rotate: -90deg;
 }
