@@ -73,6 +73,7 @@
     color: var(--belyy);
     padding: 15px 55px;
     border: none;
+    max-width: 300px;
     transition: 0.3s;
     margin-bottom: 70px;
 
@@ -165,6 +166,7 @@
     display: flex;
     align-items: center;
     gap: 96px;
+    margin-bottom: 100px;
 }
 
 .ourServicesLeft {
@@ -173,36 +175,36 @@
     gap: 12px;
 }
 
-.btnService {
+.liService {
     display: flex;
     gap: 40px;
     background: transparent;
     border: 1px solid var(--seryy);
     padding: 10px 47px 9px 20px;
-    width: 585px;
+    width: 500px;
     transition: 0.3s;
 }
 
-.btnService:hover {
-    width: 600px;
-    padding: 10px 47px 9px 20px;
-    border: 2px solid var(--akcent);
+.liService:hover {
+    /* width: 550px; */
+    padding: 10px 70px 9px 20px;
+    border: 1px solid var(--akcent);
 }
 
-.btnServiceInformation {
+.liServiceInformation {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.btnServiceInformation>h2 {
+.liServiceInformation>h2 {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: var(--chernyy);
 }
 
-.btnServiceInformation>p {
+.liServiceInformation>p {
     font-family: "Oswald", sans-serif;
     font-weight: 300;
     font-size: 18px;
@@ -217,4 +219,216 @@
     text-transform: uppercase;
     color: var(--seryy);
     rotate: -90deg;
+}
+
+/* --------------------------------------------- */
+/* WHY WE */
+
+.whyWeBox {
+    display: flex;
+    gap: 95px;
+}
+
+.whyWeRight>h2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--firmennyy-cvet);
+
+    &::after {
+        content: "";
+        display: block;
+        background-color: var(--firmennyy-cvet);
+        width: 80px;
+        height: 2px;
+    }
+}
+
+.whyWeArguments {
+    max-width: 785px;
+    background: var(--firmennyy-cvet);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 23px 284px 45px 185px;
+}
+
+.whyWeArgument {
+    max-width: 516px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.whyWeArgument>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--belyy);
+}
+
+.whyWeArgument>h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--belyy);
+}
+
+.whyWeArgument>p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: var(--seryy);
+}
+
+/* ----------------------------------- */
+/* CONECTION */
+.conectionBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.conectionLeft>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--firmennyy-cvet);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 50px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 80px;
+        background-color: #2b1b3d;
+        height: 2px;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact>h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--akcent);
+}
+
+.contact>p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--chernyy);
+}
+
+/* form */
+.conectionRight {
+    background: var(--firmennyy-cvet);
+    padding: 50px 75px 57px 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+.conectionRight>form {
+    display: flex;
+    gap: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.conectionRight>form>button {
+    margin-top: 78px;
+}
+
+.conectionRight>form>h2 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: var(--belyy);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &::after {
+        content: "";
+        display: block;
+
+        width: 80px;
+        background-color: var(--belyy);
+        height: 2px;
+    }
+}
+
+.sendForm {
+    background: var(--akcent);
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--belyy);
+    padding: 15px 55px;
+    border: none;
+    max-width: 300px;
+    transition: 0.3s;
+
+    &:hover {
+        background: var(--belyy);
+        font-family: "Oswald", sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: var(--akcent);
+    }
+}
+
+.conectionRight>form>input {
+    border: 1px solid var(--belyy);
+    background-color: transparent;
+    padding: 24px 178px;
+}
+
+.conectionRight>form>input::placeholder {
+    text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+    background: var(--firmennyy-cvet);
+    padding: 24px 0;
+}
+
+.footerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerBox>p {
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: var(--belyy);
 }
